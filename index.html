@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color picker</title>
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="color_picker.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <h1>Color picker</h1>
+    <div class="color-picker">
+        <div class="rgb-picker">
+            <label for="red">Red</label>
+            <input type="number" id="red" min="0" max="255" step="1" value="153">
+        </div>
+        <div class="rgb-picker">
+            <label for="blue">Blue</label>
+            <input type="number" id="green" min="0" max="255" step="1" value="153">
+
+        </div>
+        <div class="rgb-picker">
+            <label for="green">Green</label>
+            <input type="number" id="blue" min="0" max="255" step="1" value="153">
+        </div>
+        <div class="Transparency">
+            <label for="Transparency" >Transparency</label>
+            <input id="transparency" name="Transparency" type="number" min="0.1" max="1.0" step="0.1" value="1.0">
+        </div>
+    </div>
+    <p id="hex_value">HEX value: #......</p>
+    <p>Binary values:</p>
+    <ul>
+        <li id="red_binary">Red: ...</li>
+        <li id="green_binary">Green: ...</li>
+        <li id="blue_binary">Blue: ...</li>
+    </ul>
+    <br>
+</div>
+</body>
+</html>
